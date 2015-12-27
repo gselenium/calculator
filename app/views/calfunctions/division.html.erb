@@ -1,0 +1,18 @@
+<h1>Division Function</h1>
+<%=form_tag 'result' %>
+First Number:
+<%=text_field_tag 'a' %><br><br>
+Second Number:
+<%=text_field_tag 'b' %><br><br>
+Email:
+<%=email_field_tag 'mail' %> <br>
+Address
+<%= text_area_tag 'address' %> <br />
+
+Male<%= radio_button_tag 'male','female' %><br />
+
+<%=select_tag "kishore", "<option>NYC</option><option>Paris</option><option>Rome</option>".html_safe, disabled: false%><br />
+
+<%= date_field_tag 'date' %><br /><br />
+
+<%=submit_tag 'Calculate' %> <br>
